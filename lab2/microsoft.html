@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft - Official Home Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    .logo{
+        background: 255,255,255;
+        color:darkgray;
+        margin: 20px;
+        padding: 20px;
+
+    }
+    .nav-bar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #f3f3f3;
+    }
+    nav ul {
+        display:flex;
+        list-style: none;
+        padding: 0;
+
+    }
+    nav ul li {
+        margin: 0 5px;
+    }
+    nav ul li a, .actions a{
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+
+    }
+    .actions a{
+        margin-left: 15px;
+    }
+    .blue-box{
+        width:2000px;
+        height: 30px;
+        background-color: #1E90FF;
+        color: #f3f3f3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+        
+
+    }
+    .hero{
+        position: relative;
+        display: inline-block;
+    }
+    .hero img{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .hero-content{
+        position: absolute;
+        top:40%;
+        left:20%;
+        transform: translate(-50%, -50%);
+        background: white;
+        color:black;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: left;
+        width: 500px;
+        height: 200px;
+        
+
+    }
+    .blue-button{
+        background-color: #1E90FF;
+        color: white;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    .blue-button:hover{
+        background-color: #4169E1;
+    }
+    .image-container{
+        display: flex;
+        justify-content: center;
+        gap:20px;
+    }
+    .image-box{
+        text-align: center;
+        background-color: white;
+        
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        width: 220px;
+    }
+    .image-box img{
+        width:100%;
+        height: auto;
+        display: block;
+    }
+    .text-box{
+        
+        color: #333;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 10px;
+        
+    }
+    .icon-container{
+        display: flex;
+        justify-content: center;
+        gap:20px;
+        text-align: center;
+        align-items: center;
+    }
+    .icon-box{
+        width: 100%;
+        height: auto;
+        gap:20px;
+    }
+    .text-link{
+        margin-top: 5px;
+        font-size: 14px;
+        color:blue;
+        text-decoration: none;
+        font-weight: bold;
+        text-align: center;
+    }
+    .text-link{
+        text-decoration: underline;
+    }
+    
+</style>
+<body>
+    <header>
+        
+        <div class="nav-bar">
+            <div class="logo">Microsoft</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Microsoft 365</a></li>
+                    <li><a href="#">Windows</a></li>
+                    <li><a href="#">Surface</a></li>
+                    <li><a href="#">Xbox</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </nav>
+            <div class="actions">
+                <a href="#">Search</a>
+                <a href="#">Cart</a>
+                <a href="#">Sign in</a>
+            </div>
+        </div>
+    </header>
+    <div class = "blue-box">
+        Pay your way, with flexible payment options available at checkout. Learn more 
+    </div>
+   
+    <section class="hero">
+       
+        <img src="surface.avif" alt="Surface Pro Image">
+        <div class="hero-content">
+            <h1>Meet Surface Pro</h1>
+            <p>This laptop’s unrivaled flexibility and AI features like Live Captions and Cocreator enable you to do more than you ever imagined.</p>
+            <button class = "blue-button">Shop now</button>
+        </div>
+    </section>
+    <section class = "icon-container">
+        <div class="icon-box">
+            <img src="icon1.png" alt = "ipad">
+            <div class="text-link"><a href="#">Shop Surface devices</a></div>
+            
+        </div>
+        <div class = "icon-box">
+            <img src = "icon2.png" alt = "xbox">
+            <div class="text-link"><a href = "#">Shop Xbox games and consoles</a></div>
+            
+        </div>
+        <div class = "icon-box">
+            <img src = "icon3.png" alt = "board">
+            <div class = "text-link"><a href = "#">Shop for accessories</a></div>
+            
+        </div>
+        <div class = "icon-box">
+            <img src = "icon4.png" alt = "business">
+            <div class = "text-link"><a href = "#">Shop for your business</a></div>
+            
+        </div>
+        <div class = "icon-box">
+            <img src = "icon5.png" alt ="computer">
+            <div class = "text-link"><a href = "#">Find your next PC</a></div>
+            
+        </div>
+        <div class = "icon-box">
+            <img src = "icon6.png" alt = "microsoft">
+            <div class = "text-link"><a href = "#">Choose your Microsoft 365</a></div>
+            
+        </div>
+    </section>
+    
+    <section class="image-container">
+        <div class="image-box">
+            <img src="laptop.avif" alt="Surface Laptop">
+            <div class = "text-box"><h2>Surface Laptop, Copilot+ PC</h2><p>Unlock AI features like Live Captions and Cocreator with this powerful laptop.</p></div>
+            
+            <button>Shop now</button>
+        </div>
+        <div class="image-box">
+            <img src="xbox-series.png" alt="Xbox Series S">
+            <div class = "text-box"><h2>Xbox Series S</h2><p>Next-gen performance in the smallest Xbox ever.</p></div>
+            
+            <button>Shop now</button>
+        </div>
+        <div class="image-box">
+            <img src="xbox.avif" alt="Xbox Controllers">
+            <div class = "text-box"><h2>Xbox Controllers</h2><p>Elite, wireless, adaptive—find the controller that fits your style of play.</p></div>
+            <button>Shop now</button>
+        </div>
+        <div class="image-box">
+            <img src="developer-direct.png" alt="Developer Direct">
+            <div class = "text-box"><h2>Xbox presents Developer_Direct</h2><p>Tune in January 23 at 10 AM PT to hear directly from the developers.</p></div>
+            <button>Learn more</button>
+        </div>
+    </section>
+</body>
+</html>
